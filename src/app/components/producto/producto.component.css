@@ -1,0 +1,99 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    
+    text-align: center;
+    font-size: 40px;
+    color: #479aa1;
+}
+div{
+    justify-content: center;
+}
+
+.productos{
+    display:flex;
+    gap:30px;
+    flex-wrap: wrap;
+}
+
+.producto{
+    border:1px solid #ccc;
+    padding:10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 4px 10px rgba(128, 156, 178, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 10px;
+    width: 200px; /* Ajusta el ancho según tu diseño */
+    height: 350px; /* Fija una altura uniforme */
+    text-align: center;
+}
+.producto img {
+    width: 150px;  
+    height: 120px; 
+    object-fit: contain; 
+}
+
+.producto h3 {
+    margin-top: 10px 0;
+    font-size: 25px;
+    color: #0a415a;
+}
+
+.producto p {
+    margin-bottom: 5px 0;
+    font-size: 20px;
+}
+
+
+.producto button{
+    background-color: #5bbbc4;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.producto button:hover{
+    background-color: #479aa1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+button{
+    background-color: #ad82bb;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #9c56b3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+img{
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.ircarrito{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Ajusta el margen según necesites */
+}
+
+p{
+    font-size: 20px;
+    color: #7c1c9c;
+}

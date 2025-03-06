@@ -1,0 +1,104 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    
+    text-align: center;
+    font-size: 50px;
+    color: #e282c8;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+button{
+    background-color: #85e282;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #6bbb68;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+.productos button{
+    background-color: #f16f83;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.productos button:hover{
+    background-color: #d6576a;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+.casa{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Ajusta el margen según necesites */
+}
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Esto asegura que se centre también horizontalmente */
+    height: 300px;        /* Establece una altura fija para que la imagen se pueda centrar verticalmente */
+    margin-top: 50px;     /* Ajusta el margen según necesites */
+}
+
+.centrar img {
+    max-width: 200px;  /* Puedes ajustar este tamaño según lo que necesites */
+    width: 100%;       /* Asegura que la imagen no se desborde */
+    height: auto;      /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+.casa button{
+    background-color: #6696e9;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.casa button:hover{
+    background-color:  #40629b;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+ul {
+    list-style-type: none;  /* Elimina los puntos por defecto */
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  li span {
+    font-weight: bold;
+    color: #333;
+  }
+  .factura{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Ajusta el margen según necesites */
+    
+}
