@@ -6,7 +6,7 @@ h1{
     
     text-align: center;
     font-size: 40px;
-    color: #479aa1;
+    color: #802e37;
 }
 div{
     justify-content: center;
@@ -20,34 +20,32 @@ div{
 
 .producto{
     border:1px solid #ccc;
-    padding:10px;
     text-align: center;
     border-radius: 10px;
-    background-color: aliceblue;
-    box-shadow: 0px 4px 10px rgba(128, 156, 178, 0.3); /* Sombra más pronunciada */
+    background-color: #f6f5f3;
+    box-shadow: 0px 4px 10px #c9c5bb; /* Sombra más pronunciada */
     transform: translateY(-2px); /* Efecto de elevación */
     border: none;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
-    width: 200px; /* Ajusta el ancho según tu diseño */
-    height: 350px; /* Fija una altura uniforme */
+    width: 250px; /* Ajusta el ancho según tu diseño */
+    height: 430px; /* Fija una altura uniforme */
     text-align: center;
 }
 .producto img {
-    width: 150px;  
-    height: 120px; 
+    width: 200px;  
+    height: 200px; 
     object-fit: contain; 
 }
 
 .producto h3 {
     margin-top: 10px 0;
     font-size: 25px;
-    color: #0a415a;
+    color: #3a351d;
 }
 
 .producto p {
@@ -57,28 +55,25 @@ div{
 
 
 .producto button{
-    background-color: #5bbbc4;
+    background-color: #802e37;
     border: none;
     padding: 20px;
     border-radius: 10px;
 }
 .producto button:hover{
-    background-color: #479aa1;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    background-color: #af4b57;
+    box-shadow: 0px 4px 10px #5e1b23; /* Sombra más pronunciada */
     transform: translateY(-2px); /* Efecto de elevación */
 }
 button{
-    background-color: #ad82bb;
+    background-color: #cc979b;
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    border-radius: 10px;
+    padding:30px;
+    border-radius: 15px;
 }
 button:hover{
-    background-color: #9c56b3;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    background-color: #a36f74;
+    box-shadow: 0px 4px 10px #a36f74; /* Sombra más pronunciada */
     transform: translateY(-2px); /* Efecto de elevación */
 }
 
@@ -95,5 +90,9 @@ img{
 
 p{
     font-size: 20px;
-    color: #7c1c9c;
+    color: #a89ba6;
+}
+
+.ircarrito i{
+    font-size: 25px;
 }

@@ -1,16 +1,31 @@
 import { Injectable } from '@angular/core';
 import { Producto } from '../models/producto';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductoService {
-  private productos:Producto[]=[
-    new Producto(1,'Laptop',1200,'assets/lap.jpeg'),
-    new Producto(2,'Celular',800,'assets/cel.jpeg'),
-    new Producto(3,'Tablet',600,'assets/tablet.jpeg'),
-  ];
-  obtenerProductos():Producto[]{
-    return this.productos;
+
+  private xmlUrl = 'assets/productos.xml';
+
+  constructor(private http: HttpClient) {}
+
+  obtenerProductos(): Observable<any[]> {
+    return this.http.get(this.xmlUrl, { responseType: 'text' }).pipe(
+      map(xml => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xml, 'text/xml');
+        const productos = Array.from(xmlDoc.getElementsByTagName('producto')).map(prod=>({
+          id: prod.getElementsByTagName('id')[0].textContent,
+          nombre: prod.getElementsByTagName('nombre')[0].textContent,
+          precio:prod.getElementsByTagName('precio')[0].textContent,
+          imagen:prod.getElementsByTagName('imagen')[0].textContent
+          }));
+        return productos;
+      })
+    );
   }
 }

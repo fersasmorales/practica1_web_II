@@ -21,7 +21,7 @@ ngOnInit(){
 generarXML(){
   this.carritoService.generarXML();
 }
-creandoXML(){
+descargarXML(){
   this.carritoService.descargarXML();
 }
 eliminarProducto(producto: Producto){

@@ -3,12 +3,12 @@
   </head>
 
 <h1>Tu carrito</h1>
-<div *ngIf="carrito.length>0" >
+<div *ngIf="carrito.length>0" class="carrito" >
     <ul class="productos">
         <li *ngFor="let producto of carrito; let i=index">
             {{producto.nombre}} - ${{producto.precio}}
             <button (click)="eliminarProducto(producto)">
-                <i class="fa-solid fa-trash" style="color: rgb(235, 230, 230);"></i>
+                <i class="fa-solid fa-trash" style="color: rgb(239, 187, 196);"></i>
             </button>
         </li>
     </ul>
@@ -18,11 +18,11 @@
 </div>
 </div>
 <div *ngIf="carrito.length==0"  class="centrar">
-    <img src="assets/estrellita.jpeg">
+    <img src="assets/compras.jpeg">
     <p>El carrito está vacío <br> ¡Vamos de compras!</p>
 </div>
 <div class="casa">
     <button (click)="volver()">
-        <i class="fa-solid fa-house" style="color: rgb(235, 230, 230);"></i>
+        <i class="fa-solid fa-house" style="color: #802e37;"></i>
     </button>
 </div>
