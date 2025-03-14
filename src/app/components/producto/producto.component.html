@@ -16,8 +16,14 @@
         <i class="fa-solid fa-plus" style="color: rgb(239, 187, 196);"></i>
     </button>
 </div>
+<div *ngIf="productos.length==0" class="vacio">
+  <img src="assets/compras.jpeg">
+  <p>Por el momento no hay productos disponibles</p>
+  <p>¡Sé paciente!</p>
+</div>
 </div>
 <div class="ircarrito">
     <button (click)="irAlCarrito()"><i class="fa-solid fa-cart-shopping" style="color: #802e37;"></i></button>
+    <button (click)="irAInventario()"><i class="fa-solid fa-truck-moving" style="color: #802e37;"></i></button>
 </div>
 </body>

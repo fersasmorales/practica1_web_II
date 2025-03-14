@@ -85,14 +85,40 @@ img{
 .ircarrito{
     display: flex;
     justify-content: center;
-    margin-top: 50px; /* Ajusta el margen según necesites */
 }
 
 p{
-    font-size: 20px;
+    font-size: 25px;
     color: #a89ba6;
 }
 
 .ircarrito i{
     font-size: 25px;
+}
+ .ircarrito button{
+    margin: 30px;
+ }
+
+ .vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Esto asegura que se centre también horizontalmente */
+    height: 300px;        /* Establece una altura fija para que la imagen se pueda centrar verticalmente */
+    margin-top: 50px;     /* Ajusta el margen según necesites */
+    margin-bottom: 50px; 
+}
+
+.vacio p{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.vacio img {
+    max-width: 200px;  /* Puedes ajustar este tamaño según lo que necesites */
+    width: 100%;       /* Asegura que la imagen no se desborde */
+    height: auto;      /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 50px;
 }

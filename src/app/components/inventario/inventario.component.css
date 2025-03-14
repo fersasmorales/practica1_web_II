@@ -1,0 +1,234 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    
+    text-align: center;
+    font-size: 40px;
+    color: #802e37;
+}
+
+h2{
+    
+    text-align: center;
+    font-size: 25px;
+    color: #802e37;
+}
+div{
+    justify-content: center;
+}
+
+.productos{
+    display:flex;
+    gap:40px;
+    flex-wrap: wrap;
+}
+
+.producto{
+    border:1px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f6f5f3;
+    box-shadow: 0px 4px 10px #c9c5bb; /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px; /* Ajusta el ancho según tu diseño */
+    height: 250px; /* Fija una altura uniforme */
+    text-align: center;
+}
+.producto img {
+    width: 150px;  
+    height: 150px; 
+    object-fit: contain; 
+}
+
+.producto h3 {
+    margin-top: 10px 0;
+    margin-bottom: 4px;
+    font-size: 20px;
+    color: #3a351d;
+}
+
+.producto p {
+    font-size: 15px;
+    margin: 4px;
+}
+
+.acciones{
+    display: flex;
+    gap: 14px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.acciones button{
+    background-color: #802e37;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+.acciones button:hover{
+    background-color: #af4b57;
+    box-shadow: 0px 4px 10px #5e1b23; /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+
+.vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Esto asegura que se centre también horizontalmente */
+    height: 300px;        /* Establece una altura fija para que la imagen se pueda centrar verticalmente */
+    margin-top: 50px;     /* Ajusta el margen según necesites */
+}
+
+.vacio img {
+    max-width: 200px;  /* Puedes ajustar este tamaño según lo que necesites */
+    width: 100%;       /* Asegura que la imagen no se desborde */
+    height: auto;      /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    margin-top: 50px;
+    
+}
+
+
+
+.casa{
+    display: flex;
+    margin-top: 20px;
+}
+
+.casa button{
+    background-color: #cc979b;
+    border: none;
+    padding:30px;
+    border-radius: 15px;
+    margin: 30px;
+    margin-top: auto;
+    font-size: 20px;
+}
+.casa button:hover{
+    background-color: #a36f74;
+    box-shadow: 0px 4px 10px #a36f74; /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    color: #a89ba6;
+}
+.act button{
+    background-color:  #a89ba6;
+    font-weight: 600;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffeefc;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.act button:hover{
+    background-color:  #867383;
+    box-shadow: 0px 4px 10px  #6c5a6a;/* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+    color: #decada;
+}
+
+
+
+.formulario{
+    margin:50px;
+    justify-items: center;
+    background-color: #dfb0b4;
+    padding: 20px;
+    padding-top: 10px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #c9c5bb; /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+
+}
+
+.formulario input{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #a36f74;
+}
+
+.formulario select{
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #a36f74;
+}
+
+.formulario button{
+    background-color:  #802e37;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: rgb(239, 187, 196);
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.formulario button:hover{
+    background-color: #af4b57;
+    box-shadow: 0px 4px 10px #5e1b23; /* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Elimina márgenes predeterminados */
+    padding: auto;
+}
+
+.aviso{
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+
+  label{
+    background-color: #ffeefc;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  label:hover{
+    background-color: #ece0ea;
+    box-shadow: 0px 4px 10px  #ad9fac;/* Sombra más pronunciada */
+    transform: translateY(-2px); /* Efecto de elevación */
+    color: #decada;
+  }

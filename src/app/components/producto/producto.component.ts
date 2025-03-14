@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
-  selector: 'app-producto',
+  selector: 'app-producto',   
   standalone:true,
   imports: [CommonModule,HttpClientModule],
   templateUrl: './producto.component.html',
@@ -37,6 +37,9 @@ alert(`${producto.nombre} ha sido agregado al carrito`);
 }
 irAlCarrito(){
   this.router.navigate(['/carrito']);
+}
+irAInventario(){
+  this.router.navigate(['/inventario']);
 }
 
 }
