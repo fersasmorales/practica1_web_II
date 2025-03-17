@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<productos>
-     <producto>
-        <id>1</id>
-        <nombre>Pantalón</nombre>
-        <cantidad>10</cantidad>
-        <precio>600</precio>
-        <imagen>assets\pantalon.jpg</imagen>
-        <descripcion>Camisa de algodón 100% para hombre.</descripcion>
-    </producto>
-    <producto>
-        <id>2</id>
-        <nombre>Suéter rosa tejido</nombre>
-        <cantidad>10</cantidad>
-        <precio>499</precio>
-        <imagen>assets\sueter.jpg</imagen>
-        <descripcion>Pantalón de mezclilla con corte recto.</descripcion>
-    </producto>
-    <producto>
-        <id>3</id>
-        <nombre>Cardigan rojo</nombre>
-        <cantidad>10</cantidad>
-        <precio>459</precio>
-        <imagen>assets\cardigan.jpg</imagen>
-        <descripcion>Zapatillas deportivas con suela de gel.</descripcion>
-    </producto>
-    <producto>
-        <id>4</id>
-        <nombre>Traje formal negro</nombre>
-        <cantidad>10</cantidad>
-        <precio>1599</precio>
-        <imagen>assets\Traje.jpg</imagen>
-        <descripcion>Zapatillas deportivas con suela de gel.</descripcion>
-    </producto><!-- -->
-</productos>
+    <productos>
+      
+        <producto>
+          <id>1</id>
+          <nombre>Pantalón</nombre>
+          <precio>600</precio>
+          <cantidad>10</cantidad>
+          <imagen>assets\pantalon.jpg</imagen> <!-- Ya tiene la ruta relativa -->
+          <descripcion></descripcion>
+        </producto>
+        <producto>
+          <id>2</id>
+          <nombre>Suéter rosa tejido</nombre>
+          <precio>499</precio>
+          <cantidad>10</cantidad>
+          <imagen>assets\sueter.jpg</imagen> <!-- Ya tiene la ruta relativa -->
+          <descripcion></descripcion>
+        </producto>
+        <producto>
+          <id>3</id>
+          <nombre>Cardigan rojo</nombre>
+          <precio>450</precio>
+          <cantidad>10</cantidad>
+          <imagen>assets\cardigan.jpg</imagen> <!-- Ya tiene la ruta relativa -->
+          <descripcion></descripcion>
+        </producto>
+        <producto>
+          <id>4</id>
+          <nombre>Traje formal negro</nombre>
+          <precio>1599</precio>
+          <cantidad>10</cantidad>
+          <imagen>assets\Traje.jpg</imagen> <!-- Ya tiene la ruta relativa -->
+          <descripcion></descripcion>
+        </producto>
+    </productos>

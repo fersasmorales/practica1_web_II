@@ -7,12 +7,7 @@
     <button (click)="agregarFormulario()">
       <i class="fa-solid fa-plus" style="color: rgb(239, 187, 196); "></i>
     </button>
-    <button (click)="eliminarFormulario()">
-      <i class="fa-solid fa-trash" style="color: rgb(239, 187, 196);"></i>
-    </button>
-    <button (click)="modificarFormulario()">
-      <i class="fa-solid fa-pencil" style="color: rgb(239, 187, 196);"></i>
-    </button>
+    
   </div>
 
   <div *ngIf="agregar" class="centrar">
@@ -23,7 +18,7 @@
       <input type="number" #cantidad placeholder="Stock">
       <div>
         <label for="fileInput" class="centrar label"><i class="fa-solid fa-image" style="color: #802e37;"></i></label>
-        <input id="fileInput" type="file" (change)="onFileSelected($event)" style="display: none;" (change)="onFileChange()" #imagen>
+        <input id="fileInput" type="file" (change)="onFileSelected($event)" style="display: none;" #imagen>
         <div *ngIf="selectedFile" style="margin: 10px;">
         {{ selectedFile.name }}
         </div>
@@ -32,25 +27,20 @@
     </div>
   </div>
 
-  <div *ngIf="eliminar" class="centrar eliminar">
-    <div class="formulario">
-      <h2>Eliminar Producto</h2>
-      <select [(ngModel)]="opcionSeleccionado" (change)="capturar()">
-        <option *ngFor="let producto of productos" [value]="producto.id">
-          {{ producto.nombre }}
-        </option>
-      </select>  
-      <button (click)="eliminarProducto(opcionSeleccionado)">Eliminar</button>
-    </div>
-  </div>
   <div *ngIf="modificar" class="centrar">
     <div class="formulario">
       <h2>Modificar Producto</h2>
-      <input type="text" #nombre placeholder="Nombre del producto">
-      <input type="number" #precio placeholder="Precio">
-      <input type="number" #cantidad placeholder="Stock">
-      <input type="text" #imagen placeholder="Imagen">
-      <button (click)="agregarProducto(nombre.value, precio.valueAsNumber, cantidad.valueAsNumber, imagen.value)">Modificar</button>
+      <input type="text" #nombre placeholder="Nombre del producto" [(ngModel)]="nombre">
+      <input type="number" #precio placeholder="Precio" [(ngModel)]="precio">
+      <input type="number" #cantidad placeholder="Stock" [(ngModel)]="cantidad">
+      <div>
+        <label for="fileInput" class="centrar label"><i class="fa-solid fa-image" style="color: #802e37;"></i></label>
+        <input id="fileInput" type="file" (change)="onFileSelected($event)" style="display: none;" #imagen [(ngModel)]="imagen">
+        <div *ngIf="selectedFile" style="margin: 10px;">
+        {{ selectedFile.name }}
+        </div>
+      </div>
+      <button (click)="modificarProducto(nombre.value, precio.valueAsNumber, cantidad.valueAsNumber, imagen.value)">Modificar</button>
     </div>
   </div>
 
@@ -60,6 +50,14 @@
         <h3>{{producto.nombre}}</h3>
         <p>Precio: ${{producto.precio}}</p>
         <p>Cantidad: {{producto.cantidad}}</p>
+        <div class="acciones">
+          <button (click)="eliminarProducto(producto.id)">
+            <i class="fa-solid fa-trash" style="color: rgb(239, 187, 196);"></i>
+          </button>
+          <button (click)="editarProducto(producto.id, producto.nombre,producto.precio,producto.cantidad,producto.imagen)">
+            <i class="fa-solid fa-pencil" style="color: rgb(239, 187, 196);"></i>
+          </button>
+        </div>
     </div>
     </div>
     <div *ngIf="productos.length==0" class="vacio">
@@ -67,14 +65,10 @@
       <p>Agrega productos para tus clientes <br> ¡Sorprendelos!</p>
   </div>
 
-  <p class="aviso">Nota: Esto es solo una vista previa <br>Si quieres guardar los cambios presiona el botón de "actualizar"</p>
   <div class="casa">
     <button (click)="volver()">
         <i class="fa-solid fa-house" style="color: #802e37;"></i>
     </button>
-    <div class="act">
-      <button (click)="generarXML()">Actualizar</button>
-  </div>
   </div>
   
 
