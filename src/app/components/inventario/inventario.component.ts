@@ -31,7 +31,7 @@ selectedImagePath: string | null = null;
 
   ngOnInit(): void {
     this.productoService.obtenerProductos().subscribe(productos => {
-      this.productos = productos;
+      //this.productos = productos;
     }, error => {
       console.error('Error al obtener productos:', error);
     });

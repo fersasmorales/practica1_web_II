@@ -17,6 +17,32 @@ import { HttpClientModule } from '@angular/common/http';
 })
 
 export class ProductoComponent implements OnInit{
+  productos:any[]=[];
+  constructor(
+    private productoService:ProductoService,
+    private carritoService:CarritoService,
+    private router:Router
+  ){}
+
+  ngOnInit(){
+    this.productoService.obtenerProductos().subscribe(data=>{
+      this.productos=data as any[];
+    });
+  }
+
+  agregarAlCarrito(producto:any){
+    this.carritoService.agregarProducto(producto);
+    alert(`${producto.nombre} ha sido agregado al carrito`);
+    }
+    irAlCarrito(){
+      this.router.navigate(['/carrito']);
+    }
+    irAInventario(){
+      this.router.navigate(['/inventario']);
+    }
+}
+
+/*export class ProductoComponent implements OnInit{
  productos:any[]=[];
 constructor(
   private productoService:ProductoService,
@@ -42,4 +68,4 @@ irAInventario(){
   this.router.navigate(['/inventario']);
 }
 
-}
+}*/

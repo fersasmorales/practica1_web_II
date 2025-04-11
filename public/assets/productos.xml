@@ -2,22 +2,6 @@
     <productos>
       
         <producto>
-          <id>1</id>
-          <nombre>Pantalón</nombre>
-          <precio>600</precio>
-          <cantidad>10</cantidad>
-          <imagen>assets\pantalon.jpg</imagen> <!-- Ya tiene la ruta relativa -->
-          <descripcion></descripcion>
-        </producto>
-        <producto>
-          <id>2</id>
-          <nombre>Suéter rosa tejido</nombre>
-          <precio>499</precio>
-          <cantidad>10</cantidad>
-          <imagen>assets\sueter.jpg</imagen> <!-- Ya tiene la ruta relativa -->
-          <descripcion></descripcion>
-        </producto>
-        <producto>
           <id>3</id>
           <nombre>Cardigan rojo</nombre>
           <precio>450</precio>
@@ -29,8 +13,24 @@
           <id>4</id>
           <nombre>Traje formal negro</nombre>
           <precio>1599</precio>
-          <cantidad>10</cantidad>
-          <imagen>assets\Traje.jpg</imagen> <!-- Ya tiene la ruta relativa -->
+          <cantidad>15</cantidad>
+          <imagen>assets/Traje.jpg</imagen> <!-- Ya tiene la ruta relativa -->
+          <descripcion></descripcion>
+        </producto>
+        <producto>
+          <id>5</id>
+          <nombre>Conjunto rojo</nombre>
+          <precio>699</precio>
+          <cantidad>5</cantidad>
+          <imagen>assets/conjunto.jpeg</imagen> <!-- Ya tiene la ruta relativa -->
+          <descripcion></descripcion>
+        </producto>
+        <producto>
+          <id>6</id>
+          <nombre>Camiseta verde</nombre>
+          <precio>399</precio>
+          <cantidad>20</cantidad>
+          <imagen>assets/camisetaverde.jpeg</imagen> <!-- Ya tiene la ruta relativa -->
           <descripcion></descripcion>
         </producto>
     </productos>
