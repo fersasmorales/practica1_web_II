@@ -16,6 +16,13 @@
 <div class="factura">
     <button *ngIf="carrito.length > 0" (click)="carritoService.descargarXML()">Descargar XML</button>
 </div>
+<br>
+<br>
+<div class="paypal-container">
+    <div id="paypal-button-container" ></div>
+</div>
+
+
 </div>
 <div *ngIf="carrito.length==0"  class="centrar">
     <img src="assets/compras.jpeg">
